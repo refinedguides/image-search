@@ -10,7 +10,7 @@
 body {
   background: linear-gradient(135deg, #da4453, #89216b);
   background-attachment: fixed;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -33,16 +33,33 @@ img {
   margin-bottom: 1rem;
 }
 
+.form-wrapper {
+  width: min(400px, 80%);
+  margin-inline: auto;
+}
+
+.form-wrapper p {
+  width: 100%;
+  text-align: end;
+  color: #fff;
+  font-size: 0.75rem;
+  margin-bottom: 2rem;
+}
+
 .search-form {
-  max-width: 400px;
+  width: 100%;
   background-color: #fff;
-  margin: auto;
+  margin-block: 0.5rem;
   height: 40px;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  border: 2px solid transparent;
+}
+
+.search-form:focus-within {
+  border-color: #333;
 }
 
 .search-form input {
@@ -61,6 +78,7 @@ img {
 .search-form button {
   padding: 0 10px;
   border: none;
+  outline: none;
   cursor: pointer;
   background: transparent;
   display: flex;
@@ -68,7 +86,7 @@ img {
 }
 
 .search-form span[class^="material-"] {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .grid {
@@ -117,10 +135,12 @@ img {
 }
 
 .grid-item .photographer::before {
-  font-family: "Material Symbols Outlined";
-  font-size: 1.5rem;
-  content: "\e412";
+  content: "";
   margin-right: 0.5rem;
+  background: url(https://images.pexels.com/lib/api/pexels-white.png) no-repeat;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
 }
 
 .no-result {

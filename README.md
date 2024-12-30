@@ -20,3 +20,13 @@ A basic implementation of an image search using the Pexels API to show "infinite
 - [Pexels](https://www.pexels.com)
 - [Google Fonts](https://fonts.google.com)
 - [Google Font Icons](https://fonts.google.com/icons)
+
+### Screenshots
+
+![Image Search](https://raw.githubusercontent.com/refinedguides/image-search/main/screenshot.png)
+
+### Support Me
+
+If you'd like to support me, consider buying me a coffee. Thanks!
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/refinedguides)

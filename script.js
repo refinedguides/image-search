@@ -10,12 +10,12 @@ let sentinelObserver;
 //* event listeners
 
 const setupListeners = () => {
-  searchForm.addEventListener("submit", onSearchFormSubmit);
+  searchForm.addEventListener("submit", handleSearch);
 };
 
 //* event handlers
 
-const onSearchFormSubmit = (e) => {
+const handleSearch = (e) => {
   e.preventDefault();
 
   const query = searchForm.query.value.trim();
